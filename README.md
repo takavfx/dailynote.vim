@@ -70,7 +70,7 @@ If you set the template like below:
 
 Then you get:
 
-```
+```markdown
 # Daily Note: 2023-3-5.md
 
 ## Today Working Tasks
