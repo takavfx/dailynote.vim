@@ -9,6 +9,7 @@ Installing with dein.vim, for example, set in toml like this.
 ```toml
 [[plugins]]
 repo = 'takavfx/dailynote.vim'
+depends = 'denops.vim'
 hook_add="""
 let g:dailynote#datefmt = 'YYYY/YYYY-M/YYYY-M-d' " This is optional.
 """
