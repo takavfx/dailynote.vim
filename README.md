@@ -18,7 +18,7 @@ let g:dailynote#datefmt = 'YYYY/YYYY-M/YYYY-M-d' " This is optional.
 
 Use this command in DialyNote project **_*ROOT*_ directory.
 
-Read also [dailynote.txt](docs/dailynote.txt)
+Read also [dailynote.txt](doc/dailynote.txt)
 
 ### Create/Open Daily Note
 
