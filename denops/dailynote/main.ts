@@ -25,6 +25,7 @@ export async function main(denops: Denops): Promise<void> {
         await denops.cmd(`e ${filepath}`);
         await denops.call('setline', 1, content.split(/\r?\n/g));
       }
+      return Promise.resolve();
     },
   }
 
