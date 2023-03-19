@@ -11,7 +11,7 @@ import { get_filepath, create_content } from "./dailynote.ts";
 export async function main(denops: Denops): Promise<void> {
   denops.dispatcher = {
     async create(timedelta: string): Promise<void> {
-      let pathfmt = await dpstdVariable.globals.get(denops, "daylynote#pathfmt") as string;
+      let pathfmt = await dpstdVariable.globals.get(denops, "dailynote#pathfmt") as string;
       if (!pathfmt) {
         pathfmt = 'YYYY/YYYY-M/YYYY-M-d';
       }
