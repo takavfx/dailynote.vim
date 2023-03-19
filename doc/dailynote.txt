@@ -4,12 +4,12 @@ Author:  Takanori Kishikawa <aruatus.lemma@gmail.com>
 License: MIT license
 
 =============================================================================
-CONTENTS					                                 *dailynote-contents*
+CONTENTS		                            *dailynote-contents*
 
-INTRODUCTION		                             			|dailynote-introduction|
-INTERFACE				                                  |dailynote-interface|
-  VARIABLE				                                |dailynote-variable|
-  AUTOCMD				                                  |dailynote-autocmd|
+INTRODUCTION		                   			|dailynote-introduction|
+INTERFACE				                        |dailynote-interface|
+  VARIABLE				                      |dailynote-variable|
+  AUTOCMD				                        |dailynote-autocmd|
 
 
 =============================================================================
@@ -29,7 +29,7 @@ INTERFACE						  *dailynote-interface*
 -----------------------------------------------------------------------------
 VARIABLE						  *dailynote-variable*
 
-*g:dailynote_pathfmt*
+*g:dailynote#pathfmt*
 	File path format from root directory to dailynote file like '2023-3-5.md'.
 	The format belongs to ptera supports format:
 					https://tak-iwamoto.github.io/ptera/format.html
