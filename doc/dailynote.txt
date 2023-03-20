@@ -29,13 +29,13 @@ INTERFACE						  *dailynote-interface*
 -----------------------------------------------------------------------------
 VARIABLE						  *dailynote-variable*
 
-*g:dailynote#pathfmt*
-	File path format from root directory to dailynote file like '2023-3-5.md'.
+*g:dailynote_pathfmt*
+	File path format from root directory to dailynote file like '2023-03-05.md'.
 	The format belongs to ptera supports format:
 					https://tak-iwamoto.github.io/ptera/format.html
-	If you want to set like '~/2023/2022-03/2022-03-05.md', then you have to set
-	this variable to 'YYYY/YYYY-MM/YYYY-MM-dd'.
-	Default: 'YYYY/YYYY-M/YYYY-M-d'
+	If you want to set like '~/2023/2022-3/2022-3-5.md', then you have to set
+	this variable to 'YYYY/YYYY-M/YYYY-M-d'.
+	Default: 'YYYY/YYYY-MM/YYYY-MM-d'
 
 
 -----------------------------------------------------------------------------

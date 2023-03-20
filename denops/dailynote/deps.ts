@@ -1,6 +1,6 @@
 export type { Denops } from "https://deno.land/x/denops_std@v4.1.0/mod.ts";
 export { parse } from "https://deno.land/x/denops_std@v4.1.0/argument/mod.ts";
-export * as dpstdVariable from "https://deno.land/x/denops_std@v4.1.0/variable/mod.ts";
+export * as vars from "https://deno.land/x/denops_std@v4.1.0/variable/mod.ts";
 export {
   basename,
   dirname,

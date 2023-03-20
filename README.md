@@ -10,14 +10,11 @@ Installing with dein.vim, for example, set in toml like this.
 [[plugins]]
 repo = 'takavfx/dailynote.vim'
 depends = 'denops.vim'
-hook_add="""
-let g:dailynote#datefmt = 'YYYY/YYYY-M/YYYY-M-d' " This is optional.
-"""
 ```
 
 ## Introduction
 
-Use this command in DialyNote project **_*ROOT*_ directory.
+Use this command in DialyNote project ROOT directory.
 
 Read also [dailynote.txt](doc/dailynote.txt)
 
@@ -29,7 +26,7 @@ To Create(Open) dailynote, use this command:
 :DialyNoteCreate
 ```
 
-This command creates if time is 2023/3/5, '~/2023/2023-3/2023-3-5.md'
+This command creates if time is 2023/03/05, '~/2023/2023-03/2023-03-05.md'
 
 If you want to create 3 days before daily note, then use command with arg:
 
@@ -37,7 +34,7 @@ If you want to create 3 days before daily note, then use command with arg:
 :DailyNoteCreate -3
 ```
 
-This creates '~/2023/2023-3/2023-3-2.md'.
+This creates '~/2023/2023-3/2023-03-02.md'.
 
 If creating file exists already, open that file into a buffer.
 
@@ -72,7 +69,7 @@ If you set the template like below:
 Then you get:
 
 ```markdown
-# Daily Note: 2023-3-5.md
+# Daily Note: 2023-03-05.md
 
 ## Today Working Tasks
 
