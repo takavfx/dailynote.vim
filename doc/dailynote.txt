@@ -4,43 +4,78 @@ Author:  Takanori Kishikawa <aruatus.lemma@gmail.com>
 License: MIT license
 
 =============================================================================
-CONTENTS		                            *dailynote-contents*
+CONTENT                                     *dailynote-contents*
 
-INTRODUCTION		                   			|dailynote-introduction|
-INTERFACE				                        |dailynote-interface|
-  VARIABLE				                      |dailynote-variable|
-  AUTOCMD				                        |dailynote-autocmd|
+INTRODUCTION                            |dailynote-introduction|
+USAGE                                   |dailynote-usage|
+  TEMPLATE                              |dailynote-template|
+INTERFACE                               |dailynote-interface|
+  VARIABLE                              |dailynote-variable|
+  AUTOCMD                               |dailynote-autocmd|
 
 
 =============================================================================
-INTRODUCTION					*dailynote-introduction*
+INTRODUCTION                                *dailynote-introduction*
 
 *dailynote.vim* (dailynote) is an tool to create and manage daily notes.
 
 DailyNote: Create
-	To Create note, use command `DailyNoteCreate`.
-	If you add some template text under a title, create template.md file
-	at root level.
+      To Create note, use command `DailyNoteCreate`.
+      If you add some template text under a title, create template.md file
+      at root level.
 
 
 =============================================================================
-INTERFACE						  *dailynote-interface*
+USAGE                                       *dailynote-usage*
 
 -----------------------------------------------------------------------------
-VARIABLE						  *dailynote-variable*
+TEMPLATE                                    *dailynote-template*
+
+User may want to create a dailynote with some template text.
+To do this, create a file named `template.md` at root level.
+The content of the file will be used as template text.
+
+Ex:
+```
+## ToDos
+
+
+## Notes
+```
+
+The result will be:
+```
+# Daily Note: 2024-06-03
+
+## ToDos
+
+
+## notes
+```
+
+
+=============================================================================
+INTERFACE                                   *dailynote-interface*
+
+-----------------------------------------------------------------------------
+VARIABLE                                    *dailynote-variable*
 
 *g:dailynote_pathfmt*
-	File path format from root directory to dailynote file like '2023-03-05.md'.
-	The format belongs to ptera supports format:
-					https://tak-iwamoto.github.io/ptera/format.html
-	If you want to set like '~/2023/2022-3/2022-3-5.md', then you have to set
-	this variable to 'YYYY/YYYY-M/YYYY-M-d'.
-	Default: 'YYYY/YYYY-MM/YYYY-MM-d'
+      File path format from root directory to dailynote file
+      like '2023-03-05.md'.
+      The format belongs to ptera supports format:
+              https://tak-iwamoto.github.io/ptera/format.html
+      If you want to set like '~/2023/2022-3/2022-3-5.md',
+      then you have to set this variable to 'YYYY/YYYY-M/YYYY-M-d'.
+
+      Default: 'YYYY/YYYY-MM/YYYY-MM-d'
 
 
 -----------------------------------------------------------------------------
-AUTOCMD	                                           dailynote-autocmd
+AUTOCMD                                            dailynote-autocmd
 
 DailyNoteCreate                                    DailyNoteCreate
-			Create new daily note.
+        Create new daily note.
 
+=============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl:
